@@ -39,6 +39,11 @@
     # If it has error, then follow below!!!
     $ cd ~/rtl8831
     $ make && sudo make install
+
+    # If second method has error, then follow below!!!
+    $ dkms status
+    $ sudo dkms remove rtl8851bu/0.2 --all
+    $ sudo dkms install .
     ```
     
 + After install, reboot
